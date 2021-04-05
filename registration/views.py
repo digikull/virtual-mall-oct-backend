@@ -6,7 +6,10 @@ from rest_framework import status
 from .RegistrationSerializer import RegistrationSerializer
 from django.contrib.auth import get_user_model
 
-User = get_user_model() # Calling Custom User
+
+
+# Calling Custom User
+User = get_user_model() 
 
 class Registration(APIView):
 

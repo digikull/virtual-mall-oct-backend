@@ -106,8 +106,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
-AUTH_USER_MODEL = 'account.User' #this changes built-in model to custom model
+#this changes built-in model to custom model
+AUTH_USER_MODEL = 'account.User' 
 
 
 # Internationalization
