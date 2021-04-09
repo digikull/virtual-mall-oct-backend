@@ -7,7 +7,7 @@ User = get_user_model() #For Custom User
 class RegistrationSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['email', 'full_name', 'password']
+        fields = ['full_name','password', 'email']
 
         #Validating the email
         def validate(self, attrs):

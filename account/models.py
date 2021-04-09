@@ -37,16 +37,16 @@ class CustomAccountManager(BaseUserManager):
         user = self.model(email=email,full_name=full_name, **other_fields)
 
         user.set_password(password)
-        user.save(using=self._db)
+        user.save()
         return user
 
 
 #Creating User Model
 class User(AbstractBaseUser, PermissionsMixin):
-    email = models.EmailField(_('email address'),unique=True)
+    email = models.EmailField(max_length=70,unique=True)
     full_name = models.CharField(max_length=50)
     signup_date = models.DateTimeField(default=timezone.now)
-    
+    business_name = models.CharField(max_length=50,default='NA')
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
 

@@ -16,15 +16,20 @@ class Registration(APIView):
     def post(self,request):
         
         serialized = RegistrationSerializer(data=request.data)
-
+        
         if serialized.is_valid():
+           
             serialized.save()
+            # return Response({'success': True})
+            
         else:
-            return Response({'error':serialized.errors})
+            
+            return Response({'error':'Email is Already Registered'})
         result = User.objects.all()
         output_serialized = RegistrationSerializer(result, many=True)
 
         return Response({
             'User_Registered': 'Registed Suceesfully'
+            
            
         })

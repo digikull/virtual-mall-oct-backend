@@ -6,8 +6,8 @@
             "port": 5432,
             "askForPassword": true,
             "driver": "PostgreSQL",
-            "name": "mall_db",
-            "database": "mall_db",
+            "name": "vmalldb",
+            "database": "v_mall_db",
             "username": "postgres"
         }
     ]
