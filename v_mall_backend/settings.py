@@ -82,11 +82,12 @@ WSGI_APPLICATION = 'v_mall_backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'VR_MALL',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'virtualMall',
         'USER': 'postgres',
-        'PASSWORD': 'Shubh1995#', # enter your postgres password here
-        'HOST': 'localhost'
+        'PASSWORD': 'gfloctbatch',
+        'HOST': 'database-1.cos17dl5jv9r.ap-south-1.rds.amazonaws.com',
+        'POST': 5432,
     }
 }
 
