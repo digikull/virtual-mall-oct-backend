@@ -83,13 +83,26 @@ WSGI_APPLICATION = 'v_mall_backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'virtualMall',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'vMall',
         'USER': 'postgres',
-        'PASSWORD': 'gfloctbatch',
-        'HOST': 'database-1.cos17dl5jv9r.ap-south-1.rds.amazonaws.com',
-        'POST': 5432,
+        'PASSWORD': 'Shubh1995#', # enter your postgres password here
+        'HOST': 'localhost'
     }
+
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'virtualMall',
+    #     'USER': 'postgres',
+    #     'PASSWORD': 'gfloctbatch',
+    #     'HOST': 'database-1.cos17dl5jv9r.ap-south-1.rds.amazonaws.com',
+    #     'POST': 5432,
+    # }
+
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
 }
 
 
